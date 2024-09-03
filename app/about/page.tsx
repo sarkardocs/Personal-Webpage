@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import MainLayout from '@/layouts/MainLayout';
+import { CSSProperties } from 'react'; // Import CSSProperties for type safety
 
 export default function About() {
   useEffect(() => {
@@ -81,19 +82,19 @@ export default function About() {
 }
 
 // Styles for the portfolio page
-const containerStyle = {
+const containerStyle: CSSProperties = {
   padding: '20px',
   maxWidth: '800px',
   margin: 'auto',
   fontFamily: 'Poppins, sans-serif', // Use Poppins font
 };
 
-const headerStyle = {
+const headerStyle: CSSProperties = {
   textAlign: 'center',
   marginBottom: '30px', // Increased margin for spacing
 };
 
-const titleStyle = {
+const titleStyle: CSSProperties = {
   fontSize: '2.5rem',
   margin: '0 0 10px 0', // Margin adjustments for spacing
   fontWeight: '600', // Semi-bold for a clean look
@@ -101,18 +102,18 @@ const titleStyle = {
   fontFamily: 'Poppins, sans-serif', // Use Poppins font
 };
 
-const subtitleStyle = {
+const subtitleStyle: CSSProperties = {
   fontSize: '1.5rem',
   fontWeight: '400',
   color: '#555',
   fontFamily: 'Poppins, sans-serif',
 };
 
-const sectionStyle = {
+const sectionStyle: CSSProperties = {
   marginBottom: '30px', // Increased margin for spacing
 };
 
-const sectionTitleStyle = {
+const sectionTitleStyle: CSSProperties = {
   fontSize: '2rem',
   fontWeight: '600',
   color: '#fff',
@@ -123,16 +124,16 @@ const sectionTitleStyle = {
   fontFamily: 'Poppins, sans-serif',
 };
 
-const textStyle = {
+const textStyle: CSSProperties = {
   fontSize: '1.2rem',
   lineHeight: '1.6',
 };
 
-const listStyle = {
+const listStyle: CSSProperties = {
   listStyleType: 'none',
   padding: 0,
 };
 
-const listItemStyle = {
+const listItemStyle: CSSProperties = {
   marginBottom: '15px', // Increased margin for spacing
 };
