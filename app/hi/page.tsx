@@ -6,20 +6,19 @@ import { CSSProperties } from 'react';
 function WelcomePage() {
   return (
     <div style={welcomePageStyle}>
-      <h1 style={welcomeTextStyle}>hii</h1>
-      <p style={welcomeSubTextStyle}>enjoy your stay!</p>
+      <h1 style={welcomeTextStyle}>HI</h1>
     </div>
   );
 }
 
 const welcomePageStyle: CSSProperties = {
   display: 'flex',
-  flexDirection: 'column', // 'column' is a valid value
+  flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
   height: '70vh',
   textAlign: 'center',
-  fontFamily: 'var(--font-medium)', // Ensure CSS variables are defined
+  fontFamily: 'sans-serif',
   margin: 0,
   padding: 0,
   overflow: 'hidden',
@@ -28,15 +27,9 @@ const welcomePageStyle: CSSProperties = {
 const welcomeTextStyle: CSSProperties = {
   fontSize: '2.5rem',
   fontWeight: 'bold',
-  color: 'var(--text)', // Ensure CSS variables are defined
+  color: 'black', // Direct color value to avoid issues with CSS variables
   marginBottom: '1rem',
-  fontFamily: 'var(--font-extrabold)', // Ensure CSS variables are defined
-};
-
-const welcomeSubTextStyle: CSSProperties = {
-  fontSize: '1.2rem',
-  color: 'var(--text)', // Ensure CSS variables are defined
-  fontFamily: 'var(--font-medium)', // Ensure CSS variables are defined
+  fontFamily: 'sans-serif',
 };
 
 export default function Uses() {
