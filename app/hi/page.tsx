@@ -1,7 +1,7 @@
 'use client';
 
 import MainLayout from '@/layouts/MainLayout';
-import { CSSProperties } from 'react'; // Import CSSProperties for type safety
+import { CSSProperties } from 'react';
 
 function WelcomePage() {
   return (
@@ -14,12 +14,12 @@ function WelcomePage() {
 
 const welcomePageStyle: CSSProperties = {
   display: 'flex',
-  flexDirection: 'column' as 'column', // Explicitly set the type
+  flexDirection: 'column', // 'column' is a valid value
   alignItems: 'center',
   justifyContent: 'center',
   height: '70vh',
   textAlign: 'center',
-  fontFamily: 'var(--font-medium)', // If you are using CSS variables, ensure they are defined
+  fontFamily: 'var(--font-medium)', // Ensure CSS variables are defined
   margin: 0,
   padding: 0,
   overflow: 'hidden',
@@ -28,15 +28,15 @@ const welcomePageStyle: CSSProperties = {
 const welcomeTextStyle: CSSProperties = {
   fontSize: '2.5rem',
   fontWeight: 'bold',
-  color: 'var(--text)', // Ensure the CSS variable is defined
+  color: 'var(--text)', // Ensure CSS variables are defined
   marginBottom: '1rem',
-  fontFamily: 'var(--font-extrabold)', // Ensure the CSS variable is defined
+  fontFamily: 'var(--font-extrabold)', // Ensure CSS variables are defined
 };
 
 const welcomeSubTextStyle: CSSProperties = {
   fontSize: '1.2rem',
-  color: 'var(--text)', // Ensure the CSS variable is defined
-  fontFamily: 'var(--font-medium)', // Ensure the CSS variable is defined
+  color: 'var(--text)', // Ensure CSS variables are defined
+  fontFamily: 'var(--font-medium)', // Ensure CSS variables are defined
 };
 
 export default function Uses() {
