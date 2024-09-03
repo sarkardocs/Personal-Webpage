@@ -14,7 +14,7 @@ const siteMetadata = {
   github: 'https://github.com/sarkardocs',
   twitter: 'https://twitter.com/sarkardocs',
   facebook: 'https://facebook.com/subashbaniyaa',
-  linkedin: 'https://www.linkedin.com/in/sarkardocs/',
+  linkedin: 'https://www.linkedin.com/in/subashdev/',
   spotify: 'https://open.spotify.com/user/123',
   steam: 'https://steamcommunity.com/id/sarkardocs/',
   locale: 'en-US',
