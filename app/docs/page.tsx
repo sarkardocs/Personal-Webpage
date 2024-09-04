@@ -165,8 +165,7 @@ const linkStyle: CSSProperties = {
 
 const categoryTitleStyle: CSSProperties = {
   fontSize: '1.6rem',
-  fontWeight: '600',
-  textAlign: 'center',  // Ensure this is a valid value
+  fontWeight: '600',  // Ensure this is a valid value
   color: '#ffffff',
   margin: '4rem 0 2rem',
   fontFamily: 'Poppins, sans-serif',
@@ -212,7 +211,6 @@ const textStyle: CSSProperties = {
 };
 
 const backLinkStyle: CSSProperties = {
-  textAlign: 'center',
   fontSize: '0.9rem',
   fontFamily: 'Poppins, sans-serif',
 };
