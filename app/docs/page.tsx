@@ -141,57 +141,57 @@ export default function ApiDocs() {
   );
 }
 
-const containerStyle: React.CSSProperties = {
+const containerStyle = {
   padding: '20px',
   maxWidth: '800px',
   margin: 'auto',
   fontFamily: 'Poppins, sans-serif',
 };
 
-const baseUrlContainerStyle: React.CSSProperties = {
+const baseUrlContainerStyle = {
   marginBottom: '20px',
 };
 
-const baseUrlStyle: React.CSSProperties = {
+const baseUrlStyle = {
   fontSize: '1.1rem',
   lineHeight: '1.6',
   fontWeight: '600',
 };
 
-const linkStyle: React.CSSProperties = {
+const linkStyle = {
   color: '#1e90ff',
   textDecoration: 'none',
   fontWeight: '600',
 };
 
-const categoryTitleStyle: React.CSSProperties = {
+const categoryTitleStyle = {
   fontSize: '1.6rem',
   fontWeight: '600',
-  textAlign: 'center' as React.CSSProperties['textAlign'], // Explicitly cast to correct type
+  textAlign: 'center' as 'center',  // Ensure correct type
   color: '#ffffff',
-  margin: '2rem 0 1rem',
+  margin: '4rem 0 2rem',
   fontFamily: 'Poppins, sans-serif',
   padding: '5px 10px',
   backgroundColor: '#56647D',
   borderRadius: '20px',
 };
 
-const endpointContainerStyle: React.CSSProperties = {
+const endpointContainerStyle = {
   marginBottom: '40px',
 };
 
-const endpointStyle: React.CSSProperties = {
+const endpointStyle = {
   marginBottom: '60px',
 };
 
-const endpointTitleStyle: React.CSSProperties = {
+const endpointTitleStyle = {
   fontSize: '1.3rem',
   fontWeight: '600',
   marginBottom: '0px',
   fontFamily: 'Poppins, sans-serif',
 };
 
-const endpointTextStyle: React.CSSProperties = {
+const endpointTextStyle = {
   fontSize: '1.1rem',
   padding: '5px',
   borderRadius: '4px',
@@ -199,20 +199,20 @@ const endpointTextStyle: React.CSSProperties = {
   whiteSpace: 'pre-wrap',
 };
 
-const endpointPathStyle: React.CSSProperties = {
+const endpointPathStyle = {
   color: '#154C79',
   fontWeight: 'bold',
   marginLeft: '15px',
 };
 
-const textStyle: React.CSSProperties = {
+const textStyle = {
   fontSize: '1.1rem',
   lineHeight: '1.5',
   marginBottom: '50px',
   marginLeft: '20px',
 };
 
-const backLinkStyle: React.CSSProperties = {
+const backLinkStyle = {
   textAlign: 'center',
   fontSize: '0.9rem',
   fontFamily: 'Poppins, sans-serif',
