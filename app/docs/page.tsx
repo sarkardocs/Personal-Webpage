@@ -8,7 +8,6 @@ import Link from '@/components/Link';
 
 export default function ApiDocs() {
   useEffect(() => {
-    // Dynamically load Merriweather font and other required fonts
     const fontLink = document.createElement('link');
     fontLink.rel = 'stylesheet';
     fontLink.href =
@@ -142,7 +141,6 @@ export default function ApiDocs() {
   );
 }
 
-// Styles for the API documentation page
 const containerStyle = {
   padding: '20px',
   maxWidth: '800px',
@@ -157,11 +155,11 @@ const baseUrlContainerStyle = {
 const baseUrlStyle = {
   fontSize: '1.1rem',
   lineHeight: '1.6',
-  fontWeight: '600', // Slightly bold text for Base URL
+  fontWeight: '600',
 };
 
 const linkStyle = {
-  color: '#1e90ff', // Bright sky blue
+  color: '#1e90ff',
   textDecoration: 'none',
   fontWeight: '600',
 };
@@ -170,12 +168,12 @@ const categoryTitleStyle = {
   fontSize: '1.6rem',
   fontWeight: '600',
   textAlign: 'center',
-  color: '#ffffff', // Text color for better contrast against the background
+  color: '#ffffff',
   margin: '4rem 0 2rem',
   fontFamily: 'Poppins, sans-serif',
   padding: '5px 10px',
-  backgroundColor: '#56647D', // Background color for highlight
-  borderRadius: '20px', // Creates an oval shape
+  backgroundColor: '#56647D',
+  borderRadius: '20px',
 };
 
 const endpointContainerStyle = {
