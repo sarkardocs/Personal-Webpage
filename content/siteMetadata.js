@@ -4,7 +4,7 @@ const siteMetadata = {
   headerTitle: 'subashbaniyaa',
   description: 'Personal Website',
   language: 'en-us',
-  theme: 'dark',
+  theme: 'white',
   siteUrl: 'https://subashbaniya.info.np',
   siteRepo: 'https://github.com/sarkardocs/Subash',
   siteLogo: '/static/favicons/character.png',
