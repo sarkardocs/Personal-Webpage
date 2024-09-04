@@ -1,10 +1,9 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import 'prismjs/themes/prism.css';
-import 'prismjs/prism.js';
 import MainLayout from '@/layouts/MainLayout';
 import Link from '@/components/Link';
+import { CSSProperties } from 'react';
 
 export default function ApiDocs() {
   useEffect(() => {
@@ -141,33 +140,34 @@ export default function ApiDocs() {
   );
 }
 
-const containerStyle = {
+// Styles for the API Docs page
+const containerStyle: CSSProperties = {
   padding: '20px',
   maxWidth: '800px',
   margin: 'auto',
   fontFamily: 'Poppins, sans-serif',
 };
 
-const baseUrlContainerStyle = {
+const baseUrlContainerStyle: CSSProperties = {
   marginBottom: '20px',
 };
 
-const baseUrlStyle = {
+const baseUrlStyle: CSSProperties = {
   fontSize: '1.1rem',
   lineHeight: '1.6',
   fontWeight: '600',
 };
 
-const linkStyle = {
+const linkStyle: CSSProperties = {
   color: '#1e90ff',
   textDecoration: 'none',
   fontWeight: '600',
 };
 
-const categoryTitleStyle = {
+const categoryTitleStyle: CSSProperties = {
   fontSize: '1.6rem',
   fontWeight: '600',
-  textAlign: 'center' as 'center', // Ensure correct TypeScript type
+  textAlign: 'center', // Use 'center' without type assertion
   color: '#ffffff',
   margin: '4rem 0 2rem',
   fontFamily: 'Poppins, sans-serif',
@@ -176,22 +176,22 @@ const categoryTitleStyle = {
   borderRadius: '20px',
 };
 
-const endpointContainerStyle = {
+const endpointContainerStyle: CSSProperties = {
   marginBottom: '40px',
 };
 
-const endpointStyle = {
+const endpointStyle: CSSProperties = {
   marginBottom: '60px',
 };
 
-const endpointTitleStyle = {
+const endpointTitleStyle: CSSProperties = {
   fontSize: '1.3rem',
   fontWeight: '600',
   marginBottom: '0px',
   fontFamily: 'Poppins, sans-serif',
 };
 
-const endpointTextStyle = {
+const endpointTextStyle: CSSProperties = {
   fontSize: '1.1rem',
   padding: '5px',
   borderRadius: '4px',
@@ -199,20 +199,20 @@ const endpointTextStyle = {
   whiteSpace: 'pre-wrap',
 };
 
-const endpointPathStyle = {
+const endpointPathStyle: CSSProperties = {
   color: '#154C79',
   fontWeight: 'bold',
   marginLeft: '15px',
 };
 
-const textStyle = {
+const textStyle: CSSProperties = {
   fontSize: '1.1rem',
   lineHeight: '1.5',
   marginBottom: '50px',
   marginLeft: '20px',
 };
 
-const backLinkStyle = {
+const backLinkStyle: CSSProperties = {
   textAlign: 'center',
   fontSize: '0.9rem',
   fontFamily: 'Poppins, sans-serif',
