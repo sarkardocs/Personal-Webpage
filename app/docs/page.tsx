@@ -167,7 +167,7 @@ const linkStyle = {
 const categoryTitleStyle = {
   fontSize: '1.6rem',
   fontWeight: '600',
-  textAlign: 'center' as 'center',  // Ensure correct type
+  textAlign: 'center' as 'center', // Ensure correct TypeScript type
   color: '#ffffff',
   margin: '4rem 0 2rem',
   fontFamily: 'Poppins, sans-serif',
