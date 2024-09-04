@@ -82,7 +82,7 @@ export default function ApiDocs() {
           </div>
 
           <div style={endpointStyle}>
-            <h3 style={endpointTitleStyle}>5. Generate Ai</h3>
+            <h3 style={endpointTitleStyle}>5. Generate AI</h3>
             <p style={endpointTextStyle}>
               <span style={endpointPathStyle}>api/generate?prompt=$</span>
             </p>
@@ -93,7 +93,7 @@ export default function ApiDocs() {
         </div>
 
         <div style={{ margin: '3rem 0' }}>
-          <div style={categoryTitleStyle}>Misc Api</div>
+          <div style={categoryTitleStyle}>Misc API</div>
           <div style={endpointContainerStyle}>
             <div style={endpointStyle}>
               <h3 style={endpointTitleStyle}>1. Quote</h3>
@@ -140,7 +140,6 @@ export default function ApiDocs() {
   );
 }
 
-// Styles for the API Docs page
 const containerStyle: CSSProperties = {
   padding: '20px',
   maxWidth: '800px',
@@ -167,7 +166,7 @@ const linkStyle: CSSProperties = {
 const categoryTitleStyle: CSSProperties = {
   fontSize: '1.6rem',
   fontWeight: '600',
-  textAlign: 'center', // Use 'center' without type assertion
+  textAlign: 'center',  // Ensure this is a valid value
   color: '#ffffff',
   margin: '4rem 0 2rem',
   fontFamily: 'Poppins, sans-serif',
