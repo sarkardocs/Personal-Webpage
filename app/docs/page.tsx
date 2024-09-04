@@ -169,7 +169,7 @@ const categoryTitleStyle = {
   fontWeight: '600',
   textAlign: 'center',
   color: '#ffffff',
-  margin: '4rem 0 2rem',
+  margin: '2rem 0 1rem',
   fontFamily: 'Poppins, sans-serif',
   padding: '5px 10px',
   backgroundColor: '#56647D',
