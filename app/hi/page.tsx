@@ -57,14 +57,13 @@ export default function About() {
           </ul>
         </section>
         <div style={backLinkStyle}>
-          <Link href="/">Back to homepage</Link>
+          <Link href="/docs">Navigate to docs</Link>
         </div>
       </div>
     </MainLayout>
   );
 }
 
-// Styles for the portfolio page
 const containerStyle: CSSProperties = {
   padding: '20px',
   maxWidth: '800px',
@@ -98,6 +97,7 @@ const sectionStyle: CSSProperties = {
 const sectionTitleStyle: CSSProperties = {
   fontSize: '2rem',
   fontWeight: '600',
+  margin: '5px',
   padding: '5px 0px',
   borderRadius: '5px',
   display: 'inline-block',
