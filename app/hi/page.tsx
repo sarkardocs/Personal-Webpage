@@ -2,18 +2,16 @@
 
 import React, { useEffect } from 'react';
 import MainLayout from '@/layouts/MainLayout';
-import Link from '@/components/Link'; // Import your Link component
-import { CSSProperties } from 'react'; // Import CSSProperties for type safety
+import Link from '@/components/Link';
+import { CSSProperties } from 'react';
 
 export default function About() {
   useEffect(() => {
-    // Dynamically load Font Awesome CSS
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css';
     document.head.appendChild(link);
 
-    // Load Poppins font
     const fontLink = document.createElement('link');
     fontLink.rel = 'stylesheet';
     fontLink.href =
@@ -34,7 +32,7 @@ export default function About() {
           <p style={subtitleStyle}>Exploring the art of code and design!</p>
         </header>
         <section style={sectionStyle}>
-          <h2 style={sectionTitleStyle}>⚡️Inspiration</h2>
+          <h2 style={sectionTitleStyle}>Inspiration</h2>
           <p style={textStyle}>"Creativity is intelligence having fun." - Albert Einstein</p>
           <p style={textStyle}>
             Dive into a world where technology meets creativity. Transforming ideas into stunning
@@ -52,7 +50,7 @@ export default function About() {
                 aria-label="SarkarDocs"
                 style={linkStyle}
               >
-                🔗 Sarkardocs
+                Sarkardocs
               </a>
               : Restful API docs for devs.
             </li>
