@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect } from 'react';
 import 'prismjs/themes/prism.css';
 import 'prismjs/prism.js';
@@ -34,7 +36,7 @@ export default function ApiDocs() {
           </p>
         </div>
 
-        <div style={categoryTitleStyle}>AI Models</div>
+        <div style={{ ...categoryTitleStyle, marginTop: '2rem' }}>AI Models</div>
         <div style={endpointContainerStyle}>
           <div style={endpointStyle}>
             <h3 style={endpointTitleStyle}>1. Meta Llama AI</h3>
@@ -165,7 +167,7 @@ const linkStyle: React.CSSProperties = {
 const categoryTitleStyle: React.CSSProperties = {
   fontSize: '1.6rem',
   fontWeight: '600',
-  textAlign: 'center',
+  textAlign: 'center' as React.CSSProperties['textAlign'], // Explicitly cast to correct type
   color: '#ffffff',
   margin: '2rem 0 1rem',
   fontFamily: 'Poppins, sans-serif',
