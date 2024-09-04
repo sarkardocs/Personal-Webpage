@@ -35,7 +35,7 @@ export default function ApiDocs() {
           </p>
         </div>
 
-        <div style={{ ...categoryTitleStyle, marginTop: '2rem' }}>AI Models</div>
+        <div style={categoryTitleStyle}>AI Models</div>
         <div style={endpointContainerStyle}>
           <div style={endpointStyle}>
             <h3 style={endpointTitleStyle}>1. Meta Llama AI</h3>
@@ -106,7 +106,7 @@ export default function ApiDocs() {
               <h3 style={endpointTitleStyle}>2. Rashifal</h3>
               <p style={endpointTextStyle}>
                 <span style={endpointPathStyle}>api/rashifal</span>
-              </p>
+              </p            >
             </div>
 
             <div style={endpointStyle}>
@@ -165,7 +165,8 @@ const linkStyle: CSSProperties = {
 
 const categoryTitleStyle: CSSProperties = {
   fontSize: '1.6rem',
-  fontWeight: '600',  // Ensure this is a valid value
+  fontWeight: '600',
+  textAlign: 'center', // Ensure this is a valid value
   color: '#ffffff',
   margin: '4rem 0 2rem',
   fontFamily: 'Poppins, sans-serif',
@@ -211,6 +212,7 @@ const textStyle: CSSProperties = {
 };
 
 const backLinkStyle: CSSProperties = {
+  textAlign: 'center',
   fontSize: '0.9rem',
   fontFamily: 'Poppins, sans-serif',
 };
