@@ -129,9 +129,9 @@ export default function ApiDocs() {
 
         <p style={apiDescriptionStyle}>
           These APIs provide endpoints for various functionalities including retrieving quotes,
-          fetching rashifal (horoscope), getting date/time info, and interacting with different AI
-          models. They are designed for developers who need simple and efficient access to these
-          features in their applications.
+          fetching rashifal (horoscope), getting date/time, and interacting with different AI
+          models. They are designed for devs who need restful and efficient access to these features
+          in their applications.
         </p>
 
         <div style={{ ...backLinkStyle, marginTop: '80px' }}>
@@ -226,7 +226,7 @@ const apiDescriptionStyle: CSSProperties = {
   margin: '50px auto',
   maxWidth: '800px',
   fontFamily: 'Poppins, sans-serif',
-  lineHeight: '1.6',
+  lineHeight: '1.8',
 };
 
 const backLinkStyle: CSSProperties = {
