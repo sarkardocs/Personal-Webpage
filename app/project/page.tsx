@@ -4,58 +4,25 @@ import React from 'react';
 import MainLayout from '@/layouts/MainLayout';
 import Link from '@/components/Link';
 
-const works = [
-  {
-    title: 'Personal-Portfolio',
-    image: 'static/favicons/mobile.png',
-    technologies: ['JavaScript', 'HTML', 'CSS'],
-    description: [
-      'Completely built with HTML, CSS, JavaScript',
-      'Good Looking UI',
-      'Fully customisable',
-    ],
-    liveLink: 'https://sarkardocs.vercel.app/',
-    repoLink: 'https://github.com/sarkardocs/Porfolio',
-  },
-  {
-    title: 'Flux-Dev/Schnell',
-    image: 'static/favicons/Portfolio.jpg',
-    technologies: ['JavaScript', 'Node.js', 'JavaScript', 'API'],
-    description: [
-      'Completely built with Node.js, Express, JavaScript',
-      'High Q. Img Generator',
-      '2 Models Available',
-    ],
-    liveLink: 'https://sarkardocs.vercel.app/',
-    repoLink: 'https://github.com/sarkardocs/Flux',
-  },
-  {
-    title: 'Music-Player',
-    image: 'static/favicons/Music-Player-2.0.png',
-    technologies: ['JavaScript', 'HTML', 'CSS'],
-    description: [
-      'Completely built with HTML, CSS, JavaScript',
-      'A Good Looking Music Player UI',
-      'Real-time updates On Play, Pause, Forwards',
-    ],
-    liveLink: 'https://music-player-2-0-psi.vercel.app/',
-    repoLink: 'https://github.com/sarkardocs/Music-Player',
-  },
-  {
-    title: 'Text-To-Speech',
-    image: 'static/favicons/Text-to-Speech.png',
-    technologies: ['JavaScript', 'HTML', 'CSS'],
-    description: [
-      'Completely built with HTML, CSS, JavaScript',
-      'A Good Looking Text-to-Speech Converter',
-      'Real-time Speech',
-    ],
-    liveLink: 'https://text-to-speech-one.vercel.app',
-    repoLink: 'https://github.com/sarkardocs/Text-To-Speech',
-  },
-];
+// Define the TypeScript interface for WorkBox props
+interface WorkBoxProps {
+  title: string;
+  image: string;
+  technologies: string[];
+  description: string[];
+  liveLink: string;
+  repoLink: string;
+}
 
-const WorkBox = ({ title, image, technologies, description, liveLink, repoLink }) => (
+// Define the WorkBox component with TypeScript annotations
+const WorkBox: React.FC<WorkBoxProps> = ({
+  title,
+  image,
+  technologies,
+  description,
+  liveLink,
+  repoLink,
+}) => (
   <article className="workBox">
     <div className="workImageContainer">
       <img src={image} alt={title} />
@@ -166,7 +133,59 @@ const WorkBox = ({ title, image, technologies, description, liveLink, repoLink }
   </article>
 );
 
-const WorksSection = () => (
+// Define the list of works with the proper type
+const works: WorkBoxProps[] = [
+  {
+    title: 'Personal-Portfolio',
+    image: 'static/favicons/mobile.png',
+    technologies: ['JavaScript', 'HTML', 'CSS'],
+    description: [
+      'Completely built with HTML, CSS, JavaScript',
+      'Good Looking UI',
+      'Fully customisable',
+    ],
+    liveLink: 'https://sarkardocs.vercel.app/',
+    repoLink: 'https://github.com/sarkardocs/Porfolio',
+  },
+  {
+    title: 'Flux-Dev/Schnell',
+    image: 'static/favicons/Portfolio.jpg',
+    technologies: ['JavaScript', 'Node.js', 'API'],
+    description: [
+      'Completely built with Node.js, Express, JavaScript',
+      'High Q. Img Generator',
+      '2 Models Available',
+    ],
+    liveLink: 'https://sarkardocs.vercel.app/',
+    repoLink: 'https://github.com/sarkardocs/Flux',
+  },
+  {
+    title: 'Music-Player',
+    image: 'static/favicons/Music-Player-2.0.png',
+    technologies: ['JavaScript', 'HTML', 'CSS'],
+    description: [
+      'Completely built with HTML, CSS, JavaScript',
+      'A Good Looking Music Player UI',
+      'Real-time updates On Play, Pause, Forwards',
+    ],
+    liveLink: 'https://music-player-2-0-psi.vercel.app/',
+    repoLink: 'https://github.com/sarkardocs/Music-Player',
+  },
+  {
+    title: 'Text-To-Speech',
+    image: 'static/favicons/Text-to-Speech.png',
+    technologies: ['JavaScript', 'HTML', 'CSS'],
+    description: [
+      'Completely built with HTML, CSS, JavaScript',
+      'A Good Looking Text-to-Speech Converter',
+      'Real-time Speech',
+    ],
+    liveLink: 'https://text-to-speech-one.vercel.app',
+    repoLink: 'https://github.com/sarkardocs/Text-To-Speech',
+  },
+];
+
+const WorksSection: React.FC = () => (
   <MainLayout>
     <section className="worksSection" id="works">
       <div className="sectionHead">
