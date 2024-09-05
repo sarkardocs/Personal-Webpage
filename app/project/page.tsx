@@ -4,7 +4,6 @@ import React from 'react';
 import MainLayout from '@/layouts/MainLayout';
 import Link from '@/components/Link';
 
-// Define the TypeScript interface for WorkBox props
 interface WorkBoxProps {
   title: string;
   image: string;
@@ -14,7 +13,6 @@ interface WorkBoxProps {
   repoLink: string;
 }
 
-// Define the WorkBox component with TypeScript annotations
 const WorkBox: React.FC<WorkBoxProps> = ({
   title,
   image,
@@ -85,14 +83,14 @@ const WorkBox: React.FC<WorkBoxProps> = ({
       }
 
       .workTitle {
-        font-size: 18px;
+        font-size: 22px;
         font-weight: bold;
         letter-spacing: 1px;
       }
 
       .workDescribeContainer ul {
         list-style: disc inside;
-        font-size: 0.9rem;
+        font-size: 17px;
         line-height: 1.3;
         letter-spacing: 1px;
         margin-top: 20px;
@@ -103,7 +101,7 @@ const WorkBox: React.FC<WorkBoxProps> = ({
       }
 
       .workDescribeContainer h4 {
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin-top: 7px;
         letter-spacing: 1px;
         line-height: 1.2;
@@ -133,7 +131,6 @@ const WorkBox: React.FC<WorkBoxProps> = ({
   </article>
 );
 
-// Define the list of works with the proper type
 const works: WorkBoxProps[] = [
   {
     title: 'Personal-Portfolio',
