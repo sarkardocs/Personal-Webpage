@@ -10,7 +10,7 @@ import ThemeProvider from '@/components/Providers/ThemeProvider';
 
 export const metadata = {
   title: 'Subash Baniya',
-  description: 'I build things for the web.',
+  description: 'I build things for the web',
   metadataBase: new URL('https://subashbaniya.info.np'),
 };
 
