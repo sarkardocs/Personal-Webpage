@@ -123,7 +123,8 @@ function Expertise() {
             .skills-container h1 {
               font-size: 2.5rem;
               font-weight: bold;
-              margin-bottom: 2rem;
+              color: #145c79;
+              margin-bottom: 3rem;
             }
 
             .skills-container .skills-grid {
@@ -158,7 +159,7 @@ function Expertise() {
 
             .back-to-home {
               text-align: center;
-              margin-top: 3rem;
+              margin-top: 5rem;
               margin-bottom: 2rem;
             }
 
