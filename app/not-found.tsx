@@ -17,11 +17,11 @@ export default function FourZeroFour() {
         </h1>
       </div>
       <div className="max-w-md">
-        <p className="mb-4 text-xl font-bold leading-normal md:text-2xl">
-          Sorry we couldn't find this page.
+        <p className="mb-4 text-xl font-bold leading-normal md:text-2xl">Page not found!</p>
+        <p className="mb-8">
+          Page under construction! But dont worry, you can find other content on our homepage.
         </p>
-        <p className="mb-8">But dont worry, you can find other content on our homepage.</p>
-        <Link href="/">Back to homepage</Link>
+        <Link href="/">Back to homepage </Link>
       </div>
     </SectionContainer>
   );

@@ -32,15 +32,13 @@ export default function About() {
           <p style={subtitleStyle}>Exploring the art of code and design!</p>
         </header>
         <section style={sectionStyle}>
-          <h2 style={sectionTitleStyle}>Inspiration</h2>
           <p style={textStyle}>"Creativity is intelligence having fun." - Albert Einstein</p>
           <p style={textStyle}>
             Dive into a world where technology meets creativity. Transforming ideas into stunning
-            realities, one pixel at a time.
+            realities.
           </p>
         </section>
         <section style={sectionStyle}>
-          <h2 style={sectionTitleStyle}>✈️ Explore APIs</h2>
           <ul style={listStyle}>
             <li style={listItemStyle}>
               <a
@@ -52,7 +50,7 @@ export default function About() {
               >
                 Sarkardocs
               </a>
-              : Restful API docs for devs.
+              ‎ - (Rest API for Devs)
             </li>
           </ul>
         </section>
@@ -78,39 +76,33 @@ const headerStyle: CSSProperties = {
 
 const titleStyle: CSSProperties = {
   fontSize: '2.5rem',
-  margin: '0 0 10px 0',
+  margin: '0 0 30px 0',
   fontWeight: '600',
   fontFamily: 'Poppins, sans-serif',
 };
 
 const subtitleStyle: CSSProperties = {
   fontSize: '1.5rem',
-  fontWeight: '400',
+  marginBottom: '66px',
+  fontWeight: '500',
   color: '#154c79',
   fontFamily: 'Poppins, sans-serif',
 };
 
 const sectionStyle: CSSProperties = {
-  marginBottom: '30px',
-};
-
-const sectionTitleStyle: CSSProperties = {
-  fontSize: '2rem',
-  fontWeight: '600',
-  margin: '5px',
-  padding: '5px 0px',
-  borderRadius: '5px',
-  display: 'inline-block',
-  fontFamily: 'Poppins, sans-serif',
+  marginBottom: '50px',
+  textAlign: 'center',
 };
 
 const textStyle: CSSProperties = {
-  fontSize: '1.2rem',
-  lineHeight: '1.6',
+  fontSize: '1.3rem',
+  marginBottom: '50px',
+  lineHeight: '1.5',
 };
 
 const listStyle: CSSProperties = {
   listStyleType: 'none',
+  marginLeft: '7px',
   padding: 0,
 };
 
@@ -119,12 +111,13 @@ const listItemStyle: CSSProperties = {
 };
 
 const linkStyle: CSSProperties = {
-  color: '#00BFFF',
-  textDecoration: 'none',
+  fontSize: '1.3rem',
+  color: '#154c79',
+  textDecoration: 'underline',
 };
 
 const backLinkStyle: CSSProperties = {
-  marginTop: '60px',
+  marginTop: '100px',
   textAlign: 'center',
-  fontSize: '0.8rem',
+  fontSize: '0.9rem',
 };

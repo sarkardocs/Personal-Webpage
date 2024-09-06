@@ -23,7 +23,7 @@ export default function ApiDocs() {
       <div style={containerStyle}>
         <div style={{ height: '0rem' }}></div>
 
-        <div style={categoryTitleStyle}>api for devs</div>
+        <div style={categoryTitleStyle}>API for Devs</div>
         <div style={endpointContainerStyle}>
           <div style={endpointStyle}>
             <h3 style={endpointTitleStyle}>1. Quote</h3>
@@ -52,11 +52,11 @@ export default function ApiDocs() {
               <span style={endpointPathStyle}>api/ai?msg=$&id=$&apikey=$</span>
             </p>
             <p style={textStyle}>
-              <strong>msg*</strong> (required)
+              <strong>- msg*</strong> (required)
               <br />
-              <strong>id*</strong> (required)
+              <strong>- id*</strong> (required)
               <br />
-              <strong>apikey*</strong> (required)
+              <strong>- apikey*</strong> (required)
             </p>
           </div>
 
@@ -66,7 +66,7 @@ export default function ApiDocs() {
               <span style={endpointPathStyle}>api/chat?msg=$</span>
             </p>
             <p style={textStyle}>
-              <strong>msg*</strong> (required)
+              <strong>- msg*</strong> (required)
             </p>
           </div>
 
@@ -76,7 +76,7 @@ export default function ApiDocs() {
               <span style={endpointPathStyle}>api/mistral?prompt=$</span>
             </p>
             <p style={textStyle}>
-              <strong>prompt*</strong> (required)
+              <strong>- prompt*</strong> (required)
             </p>
           </div>
 
@@ -86,7 +86,7 @@ export default function ApiDocs() {
               <span style={endpointPathStyle}>api/gemini?prompt=$</span>
             </p>
             <p style={textStyle}>
-              <strong>prompt*</strong> (required)
+              <strong>- prompt*</strong> (required)
             </p>
           </div>
 
@@ -96,7 +96,7 @@ export default function ApiDocs() {
               <span style={endpointPathStyle}>api/generate?prompt=$</span>
             </p>
             <p style={textStyle}>
-              <strong>prompt*</strong> (required)
+              <strong>- prompt*</strong> (required)
             </p>
           </div>
 
@@ -106,9 +106,9 @@ export default function ApiDocs() {
               <span style={endpointPathStyle}>api/lyrics?song=$&artist=$</span>
             </p>
             <p style={textStyle}>
-              <strong>song*</strong> (required)
+              <strong>- song*</strong> (required)
               <br />
-              <strong>artist</strong> (optional)
+              <strong>- artist</strong> (optional)
             </p>
           </div>
         </div>
@@ -128,10 +128,8 @@ export default function ApiDocs() {
         </div>
 
         <p style={apiDescriptionStyle}>
-          These APIs provide endpoints for various functionalities including retrieving quotes,
-          fetching rashifal (horoscope), getting date/time, and interacting with different AI
-          models. They are designed for devs who need restful and efficient access to these features
-          in their applications.
+          Restful API for devs! Feel free to use according to your usage. For apikey contact the
+          owner. Enjoy your stay!
         </p>
 
         <div style={{ ...backLinkStyle, marginTop: '80px' }}>
@@ -161,14 +159,15 @@ const baseUrlStyle: CSSProperties = {
   fontSize: '1.1rem',
   lineHeight: '1.6',
   fontWeight: '600',
-  padding: '10px 20px',
+  padding: '5px 20px',
+  marginTop: '30px',
   border: '2px solid  #154C79',
   borderRadius: '50px',
   textAlign: 'center',
 };
 
 const linkStyle: CSSProperties = {
-  color: '#1e90ff',
+  color: '#154c79',
   textDecoration: 'none',
   fontWeight: '600',
 };
@@ -212,6 +211,7 @@ const endpointPathStyle: CSSProperties = {
   color: '#154C79',
   fontWeight: 'bold',
   marginLeft: '15px',
+  textDecoration: 'underline',
 };
 
 const textStyle: CSSProperties = {
@@ -222,11 +222,13 @@ const textStyle: CSSProperties = {
 
 const apiDescriptionStyle: CSSProperties = {
   fontSize: '1rem',
+  fontWeight: '900',
   textAlign: 'center',
   margin: '50px auto',
   maxWidth: '800px',
   fontFamily: 'Poppins, sans-serif',
   lineHeight: '1.8',
+  textDecoration: 'underline',
 };
 
 const backLinkStyle: CSSProperties = {
