@@ -55,7 +55,7 @@ export default function About() {
           </ul>
         </section>
         <div style={backLinkStyle}>
-          <Link href="/docs">Navigate to docs</Link>
+          <Link href="/car">Navigate to cars</Link>
         </div>
       </div>
     </MainLayout>
