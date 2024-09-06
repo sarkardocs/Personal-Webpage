@@ -3,6 +3,7 @@
 import React from 'react';
 import MainLayout from '@/layouts/MainLayout';
 import Link from '@/components/Link';
+import Image from 'next/image';
 
 interface CarBoxProps {
   name: string;
@@ -14,11 +15,11 @@ interface CarBoxProps {
 const CarBox: React.FC<CarBoxProps> = ({ name, image, description, specifications }) => (
   <article className="carBox">
     <div className="carImageContainer">
-      <img src={image} alt={name} />
+      <Image src={image} alt={name} width={500} height={300} />
     </div>
     <div className="carDescribeContainer">
       <h3 className="carName">{name}</h3>
-      <p className="carDescription">— {description}</p>
+      <p className="carDescription">— {description.join(' ')}</p>
       <h4>Specifications:</h4>
       <ul>
         {specifications.map((spec, index) => (
@@ -48,12 +49,6 @@ const CarBox: React.FC<CarBoxProps> = ({ name, image, description, specification
         border-radius: 10px;
         height: auto;
         max-width: 100%;
-      }
-
-      .carImageContainer img {
-        width: 100%;
-        border-radius: 10px;
-        border: 0px solid white;
       }
 
       .carDescribeContainer {
@@ -111,15 +106,18 @@ const cars: CarBoxProps[] = [
   {
     name: 'Bugatti Chiron',
     image: 'static/favicons/bugatti.png',
-    description:
-      'The Bugatti Chiron is a luxury sports car known for its high performance and exquisite design. It is one of the fastest and most powerful production cars in the world.',
+    description: [
+      'The Bugatti Chiron is a luxury sports car known for its high performance and exquisite design.',
+      'It is one of the fastest and most powerful production cars in the world.',
+    ],
     specifications: ['Top Speed: 261 mph', '0-60 mph: 2.5 seconds', 'Quad-turbocharged W16 engine'],
   },
   {
     name: 'Ferrari LaFerrari',
     image: 'static/favicons/ferrari.png',
-    description:
+    description: [
       'The Ferrari LaFerrari is a hybrid supercar combining a powerful V12 engine with an electric motor, offering exceptional speed and handling.',
+    ],
     specifications: [
       'Top Speed: 217 mph',
       '0-60 mph: 2.6 seconds',
@@ -129,8 +127,9 @@ const cars: CarBoxProps[] = [
   {
     name: 'McLaren P1',
     image: 'static/favicons/mclaren.png',
-    description:
+    description: [
       'The McLaren P1 is a high-performance hybrid supercar with advanced aerodynamics and a striking design, delivering both speed and agility.',
+    ],
     specifications: [
       'Top Speed: 217 mph',
       '0-60 mph: 2.8 seconds',
@@ -140,8 +139,9 @@ const cars: CarBoxProps[] = [
   {
     name: 'Porsche 918 Spyder',
     image: 'static/favicons/porsche.png',
-    description:
+    description: [
       'The Porsche 918 Spyder is a plug-in hybrid supercar that combines high performance with cutting-edge technology for an exhilarating driving experience.',
+    ],
     specifications: [
       'Top Speed: 214 mph',
       '0-60 mph: 2.5 seconds',
@@ -151,8 +151,9 @@ const cars: CarBoxProps[] = [
   {
     name: 'Koenigsegg Jesko',
     image: 'static/favicons/koenigsegg.png',
-    description:
+    description: [
       'The Koenigsegg Jesko is an extreme performance car designed for both road and track, featuring a high-powered engine and advanced aerodynamics.',
+    ],
     specifications: [
       'Top Speed: 300 mph (estimated)',
       '0-60 mph: 2.5 seconds',
@@ -162,15 +163,17 @@ const cars: CarBoxProps[] = [
   {
     name: 'Pagani Huayra',
     image: 'static/favicons/pagani.png',
-    description:
+    description: [
       'The Pagani Huayra is a bespoke hypercar known for its unique design and incredible performance, featuring a powerful V12 engine and distinctive styling.',
+    ],
     specifications: ['Top Speed: 238 mph', '0-60 mph: 2.8 seconds', '6.0L V12 engine with 730 hp'],
   },
   {
-    name: 'BMW-i8',
+    name: 'BMW i8',
     image: 'static/favicons/bmw.png',
-    description:
+    description: [
       'The BMW i8 is a plug-in hybrid sports car that combines futuristic design with a dynamic driving experience, featuring advanced hybrid technology.',
+    ],
     specifications: [
       'Top Speed: 155 mph',
       '0-60 mph: 4.2 seconds',
@@ -180,8 +183,9 @@ const cars: CarBoxProps[] = [
   {
     name: 'Nissan GT-R Nismo',
     image: 'static/favicons/nissan.png',
-    description:
+    description: [
       'The Nissan GT-R Nismo is a high-performance version of the GT-R, known for its powerful engine and advanced technology.',
+    ],
     specifications: [
       'Top Speed: 205 mph',
       '0-60 mph: 2.5 seconds',
@@ -191,8 +195,9 @@ const cars: CarBoxProps[] = [
   {
     name: 'Porsche 911 GT2 RS',
     image: 'static/favicons/porsche911.png',
-    description:
+    description: [
       'The Porsche 911 GT2 RS is a track-oriented version of the 911, featuring a turbocharged flat-six engine and lightweight construction.',
+    ],
     specifications: [
       'Top Speed: 211 mph',
       '0-60 mph: 2.7 seconds',
@@ -257,24 +262,18 @@ const CarsSection: React.FC = () => (
         }
 
         .backToHome a {
-          font-size: 1.1rem;
-          color: #007bff;
-          text-decoration: underline;
+          font-size: 1.2rem;
+          color: #154c79;
+          text-decoration: none;
         }
 
-        .backToHome a:focus {
-          border: 1px solid #007bff;
+        .backToHome a:hover {
+          text-decoration: underline;
         }
 
         @media (max-width: 768px) {
           .carsSection {
             padding: 5%;
-          }
-        }
-
-        @media (max-width: 567px) {
-          .sectionHead h2 {
-            font-size: 1.8rem;
           }
         }
       `}</style>
