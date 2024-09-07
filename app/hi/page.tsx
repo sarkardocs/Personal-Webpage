@@ -119,5 +119,5 @@ const linkStyle: CSSProperties = {
 const backLinkStyle: CSSProperties = {
   marginTop: '100px',
   textAlign: 'center',
-  fontSize: '0.9rem',
+  fontSize: '1rem',
 };

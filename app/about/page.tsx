@@ -24,7 +24,12 @@ function Expertise() {
           <h1>E X P E R T I S E</h1>
           <div className="skills-grid">
             <div className="skill">
-              <FontAwesomeIcon icon={faReact} size="5x" className="icon" />
+              <FontAwesomeIcon
+                icon={faReact}
+                size="5x"
+                style={{ color: '#154C79' }}
+                className="icon"
+              />
               <h3 className="title">Web Development</h3>
               <p className="description">
                 I have built a diverse array of web applications from scratch using modern
@@ -34,7 +39,12 @@ function Expertise() {
             </div>
 
             <div className="skill">
-              <FontAwesomeIcon icon={faDocker} size="5x" className="icon" />
+              <FontAwesomeIcon
+                icon={faDocker}
+                size="5x"
+                style={{ color: '#154C79' }}
+                className="icon"
+              />
               <h3 className="title">DevOps & Automation</h3>
               <p className="description">
                 Once the application is built, I help clients set up DevOps testing, CI/CD
@@ -43,7 +53,12 @@ function Expertise() {
             </div>
 
             <div className="skill">
-              <FontAwesomeIcon icon={faPython} size="5x" className="icon" />
+              <FontAwesomeIcon
+                icon={faPython}
+                size="5x"
+                style={{ color: '#154C79' }}
+                className="icon"
+              />
               <h3 className="title">GenAI & LLM</h3>
               <p className="description">
                 Stay relevant in the market by leveraging the latest AI models in your projects. I
@@ -53,7 +68,12 @@ function Expertise() {
             </div>
 
             <div className="skill">
-              <FontAwesomeIcon icon={faNode} size="5x" className="icon" />
+              <FontAwesomeIcon
+                icon={faNode}
+                size="5x"
+                style={{ color: '#154C79' }}
+                className="icon"
+              />
               <h3 className="title">Node.js Backend</h3>
               <p className="description">
                 Proficient in developing scalable server-side applications using Node.js, with a
@@ -62,7 +82,12 @@ function Expertise() {
             </div>
 
             <div className="skill">
-              <FontAwesomeIcon icon={faJava} size="5x" className="icon" />
+              <FontAwesomeIcon
+                icon={faJava}
+                size="5x"
+                style={{ color: '#154C79' }}
+                className="icon"
+              />
               <h3 className="title">Java Development</h3>
               <p className="description">
                 Experience in developing robust and scalable applications using Java, with a focus
@@ -71,7 +96,12 @@ function Expertise() {
             </div>
 
             <div className="skill">
-              <FontAwesomeIcon icon={faHtml5} size="5x" className="icon" />
+              <FontAwesomeIcon
+                icon={faHtml5}
+                size="5x"
+                style={{ color: '#154C79' }}
+                className="icon"
+              />
               <h3 className="title">HTML/CSS</h3>
               <p className="description">
                 Experience with building semantic and accessible web pages using HTML5.
@@ -79,7 +109,12 @@ function Expertise() {
             </div>
 
             <div className="skill">
-              <FontAwesomeIcon icon={faGithub} size="5x" className="icon" />
+              <FontAwesomeIcon
+                icon={faGithub}
+                size="5x"
+                style={{ color: '#154C79' }}
+                className="icon"
+              />
               <h3 className="title">Version Control</h3>
               <p className="description">
                 Experienced with version control systems, particularly Git and GitHub, for
@@ -88,7 +123,12 @@ function Expertise() {
             </div>
 
             <div className="skill">
-              <FontAwesomeIcon icon={faApple} size="5x" className="icon" />
+              <FontAwesomeIcon
+                icon={faApple}
+                size="5x"
+                style={{ color: '#154C79' }}
+                className="icon"
+              />
               <h3 className="title">Apple Ecosystem</h3>
               <p className="description">
                 Experienced in using and developing applications within the Apple ecosystem,
@@ -97,7 +137,12 @@ function Expertise() {
             </div>
 
             <div className="skill">
-              <FontAwesomeIcon icon={faWindows} size="5x" className="icon" />
+              <FontAwesomeIcon
+                icon={faWindows}
+                size="5x"
+                style={{ color: '#154C79' }}
+                className="icon"
+              />
               <h3 className="title">Windows OS</h3>
               <p className="description">
                 Proficient in using and managing Windows operating systems for various applications,
@@ -123,7 +168,6 @@ function Expertise() {
             .skills-container h1 {
               font-size: 2.5rem;
               font-weight: bold;
-              color: #145c79;
               margin-bottom: 3rem;
             }
 
@@ -158,6 +202,7 @@ function Expertise() {
             }
 
             .back-to-home {
+              font-size: 1rem;
               text-align: center;
               margin-top: 5rem;
               margin-bottom: 2rem;

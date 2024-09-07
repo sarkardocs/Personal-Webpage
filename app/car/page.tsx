@@ -36,7 +36,7 @@ const CarBox: React.FC<CarBoxProps> = ({ name, image, description, specification
         margin-top: 40px;
         border-radius: 15px;
         box-shadow: 0px 14px 28px rgba(134, 151, 168, 0.08);
-        border: 2px solid white;
+        border: 0px solid white;
         transition: all 0.3s ease;
         font-family: 'Poppins', sans-serif;
       }
@@ -105,7 +105,7 @@ const CarBox: React.FC<CarBoxProps> = ({ name, image, description, specification
 const cars: CarBoxProps[] = [
   {
     name: 'Bugatti Chiron',
-    image: 'static/favicons/bugatti.png',
+    image: '/static/favicons/bugatti.png',
     description: [
       'The Bugatti Chiron is a luxury sports car known for its high performance and exquisite design.',
       'It is one of the fastest and most powerful production cars in the world.',
@@ -114,7 +114,7 @@ const cars: CarBoxProps[] = [
   },
   {
     name: 'Ferrari LaFerrari',
-    image: 'static/favicons/ferrari.png',
+    image: '/static/favicons/ferrari.png',
     description: [
       'The Ferrari LaFerrari is a hybrid supercar combining a powerful V12 engine with an electric motor, offering exceptional speed and handling.',
     ],
@@ -126,7 +126,7 @@ const cars: CarBoxProps[] = [
   },
   {
     name: 'McLaren P1',
-    image: 'static/favicons/mclaren.png',
+    image: '/static/favicons/mclaren.png',
     description: [
       'The McLaren P1 is a high-performance hybrid supercar with advanced aerodynamics and a striking design, delivering both speed and agility.',
     ],
@@ -138,7 +138,7 @@ const cars: CarBoxProps[] = [
   },
   {
     name: 'Porsche 918 Spyder',
-    image: 'static/favicons/porsche.png',
+    image: '/static/favicons/porsche.png',
     description: [
       'The Porsche 918 Spyder is a plug-in hybrid supercar that combines high performance with cutting-edge technology for an exhilarating driving experience.',
     ],
@@ -150,7 +150,7 @@ const cars: CarBoxProps[] = [
   },
   {
     name: 'Koenigsegg Jesko',
-    image: 'static/favicons/koenigsegg.png',
+    image: '/static/favicons/koenigsegg.png',
     description: [
       'The Koenigsegg Jesko is an extreme performance car designed for both road and track, featuring a high-powered engine and advanced aerodynamics.',
     ],
@@ -162,7 +162,7 @@ const cars: CarBoxProps[] = [
   },
   {
     name: 'Pagani Huayra',
-    image: 'static/favicons/pagani.png',
+    image: '/static/favicons/pagani.png',
     description: [
       'The Pagani Huayra is a bespoke hypercar known for its unique design and incredible performance, featuring a powerful V12 engine and distinctive styling.',
     ],
@@ -170,7 +170,7 @@ const cars: CarBoxProps[] = [
   },
   {
     name: 'BMW i8',
-    image: 'static/favicons/bmw.png',
+    image: '/static/favicons/bmw.png',
     description: [
       'The BMW i8 is a plug-in hybrid sports car that combines futuristic design with a dynamic driving experience, featuring advanced hybrid technology.',
     ],
@@ -182,7 +182,7 @@ const cars: CarBoxProps[] = [
   },
   {
     name: 'Nissan GT-R Nismo',
-    image: 'static/favicons/nissan.png',
+    image: '/static/favicons/nissan.png',
     description: [
       'The Nissan GT-R Nismo is a high-performance version of the GT-R, known for its powerful engine and advanced technology.',
     ],
@@ -194,7 +194,7 @@ const cars: CarBoxProps[] = [
   },
   {
     name: 'Porsche 911 GT2 RS',
-    image: 'static/favicons/porsche911.png',
+    image: '/static/favicons/porsche911.png',
     description: [
       'The Porsche 911 GT2 RS is a track-oriented version of the 911, featuring a turbocharged flat-six engine and lightweight construction.',
     ],

@@ -54,11 +54,11 @@ const WorkBox: React.FC<WorkBoxProps> = ({
       .workBox {
         display: flex;
         flex-direction: column;
-        padding: 30px;
-        margin-top: 40px;
+        padding: 10px;
+        margin-top: 50px;
         border-radius: 15px;
         box-shadow: 0px 14px 28px rgba(134, 151, 168, 0.08);
-        border: 2px solid #154c79;
+        border: 0px solid #fff;
         transition: all 0.3s ease;
       }
 
@@ -75,7 +75,7 @@ const WorkBox: React.FC<WorkBoxProps> = ({
       .workImageContainer img {
         width: 100%;
         border-radius: 10px;
-        border: 0px solid #154c79;
+        border: 0px solid #fff;
       }
 
       .workDescribeContainer {
@@ -108,7 +108,7 @@ const WorkBox: React.FC<WorkBoxProps> = ({
       }
 
       .workDescribeContainer .techStack {
-        color: #007bff;
+        color: #154c79;
         display: inline-block;
         padding: 0 5px;
       }
@@ -120,12 +120,12 @@ const WorkBox: React.FC<WorkBoxProps> = ({
       .workLinks a {
         font-size: 1.1rem;
         margin-right: 20px;
-        color: #007bff;
+        color: #154c79;
         text-decoration: underline;
       }
 
       .workLinks a:focus {
-        border: 1px solid #007bff;
+        border: 1px solid #154c79;
       }
     `}</style>
   </article>
@@ -187,7 +187,7 @@ const WorksSection: React.FC = () => (
     <section className="worksSection" id="works">
       <div className="sectionHead">
         <span>TAKE A LOOK AT MY</span>
-        <h2>P R O J E C T S</h2>
+        <h2>P R O J E C T</h2>
       </div>
       <div className="worksContainer sectionContainer">
         {works.map((work, index) => (
