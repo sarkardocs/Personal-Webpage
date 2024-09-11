@@ -211,7 +211,7 @@ const CarsSection: React.FC = () => (
     <section className="carsSection" id="cars">
       <div className="sectionHead">
         <span>CHECK OUT THESE</span>
-        <h2>c a r s</h2>
+        <h2>C A R S</h2>
       </div>
       <div className="carsContainer sectionContainer">
         {cars.map((car, index) => (
