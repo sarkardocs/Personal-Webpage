@@ -41,7 +41,7 @@ export default function Hero(): ReactElement {
                 href="/about"
                 className="underline-magical text-md w-max cursor-pointer sm:text-lg md:text-xl xl:text-2xl"
               >
-                Read more about me &rarr;
+                Read more about me
               </Link>
             </div>
             <motion.div
