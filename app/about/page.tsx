@@ -3,151 +3,81 @@
 import React from 'react';
 import Link from '@/components/Link';
 import MainLayout from '@/layouts/MainLayout';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faReact,
-  faDocker,
-  faPython,
-  faNode,
-  faGithub,
-  faJava,
-  faHtml5,
-  faWindows,
-  faApple,
-} from '@fortawesome/free-brands-svg-icons';
 
 function Expertise() {
   return (
     <MainLayout>
       <div className="container" id="expertise">
         <div className="skills-container">
-          <h1>E X P E R T I S E</h1>
-          <div className="skills-grid">
-            <div className="skill">
-              <FontAwesomeIcon
-                icon={faReact}
-                size="5x"
-                style={{ color: '#154C79' }}
-                className="icon"
-              />
-              <h3 className="title">Web Development</h3>
-              <p className="description">
-                I have built a diverse array of web applications from scratch using modern
-                technologies such as React and Flask. I have a strong proficiency in the SDLC
-                process and frontend + backend development.
-              </p>
-            </div>
+          {/* Top heading with Garamond Premier Pro Roman font */}
+          <h1 className="top-heading">Expertise</h1>
 
-            <div className="skill">
-              <FontAwesomeIcon
-                icon={faDocker}
-                size="5x"
-                style={{ color: '#154C79' }}
-                className="icon"
-              />
-              <h3 className="title">DevOps & Automation</h3>
-              <p className="description">
-                Once the application is built, I help clients set up DevOps testing, CI/CD
-                pipelines, and deployment automation to support the successful Go-Live.
-              </p>
-            </div>
-
-            <div className="skill">
-              <FontAwesomeIcon
-                icon={faPython}
-                size="5x"
-                style={{ color: '#154C79' }}
-                className="icon"
-              />
-              <h3 className="title">GenAI & LLM</h3>
-              <p className="description">
-                Stay relevant in the market by leveraging the latest AI models in your projects. I
-                have professional experience building enterprise-grade GenAI-enabled solutions to
-                empower intelligent decision-making.
-              </p>
-            </div>
-
-            <div className="skill">
-              <FontAwesomeIcon
-                icon={faNode}
-                size="5x"
-                style={{ color: '#154C79' }}
-                className="icon"
-              />
-              <h3 className="title">Node.js Backend</h3>
-              <p className="description">
-                Proficient in developing scalable server-side applications using Node.js, with a
-                focus on performance and maintainability.
-              </p>
-            </div>
-
-            <div className="skill">
-              <FontAwesomeIcon
-                icon={faJava}
-                size="5x"
-                style={{ color: '#154C79' }}
-                className="icon"
-              />
-              <h3 className="title">Java Development</h3>
-              <p className="description">
-                Experience in developing robust and scalable applications using Java, with a focus
-                on enterprise-level solutions and backend systems.
-              </p>
-            </div>
-
-            <div className="skill">
-              <FontAwesomeIcon
-                icon={faHtml5}
-                size="5x"
-                style={{ color: '#154C79' }}
-                className="icon"
-              />
-              <h3 className="title">HTML/CSS</h3>
-              <p className="description">
-                Experience with building semantic and accessible web pages using HTML5.
-              </p>
-            </div>
-
-            <div className="skill">
-              <FontAwesomeIcon
-                icon={faGithub}
-                size="5x"
-                style={{ color: '#154C79' }}
-                className="icon"
-              />
-              <h3 className="title">Version Control</h3>
-              <p className="description">
-                Experienced with version control systems, particularly Git and GitHub, for
-                collaborative development and code management.
-              </p>
-            </div>
-
-            <div className="skill">
-              <FontAwesomeIcon
-                icon={faApple}
-                size="5x"
-                style={{ color: '#154C79' }}
-                className="icon"
-              />
-              <h3 className="title">Apple Ecosystem</h3>
-              <p className="description">
-                Experienced in using and developing applications within the Apple ecosystem,
-                including macOS and iOS environments.
-              </p>
-            </div>
-
-            <div className="skill">
-              <FontAwesomeIcon
-                icon={faWindows}
-                size="5x"
-                style={{ color: '#154C79' }}
-                className="icon"
-              />
-              <h3 className="title">Windows OS</h3>
-              <p className="description">
-                Proficient in using and managing Windows operating systems for various applications,
-                including software development and system administration.
-              </p>
+          <div className="languages-section">
+            <div className="icons-grid">
+              <div className="icons-row">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                  alt="Express.js"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+                  alt="Node.js"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                  alt="Linux"
+                  width="40"
+                  height="40"
+                />
+              </div>
+              <div className="icons-row">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                  alt="C++"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML5"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS3"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                  alt="TypeScript"
+                  width="40"
+                  height="40"
+                />
+              </div>
             </div>
           </div>
 
@@ -156,81 +86,78 @@ function Expertise() {
           </div>
         </div>
 
-        <style jsx>
-          {`
+        <style jsx>{`
+          @font-face {
+            font-family: 'Garamond Premier Pro';
+            src:
+              url('/path-to-your-fonts/GaramondPremierPro-Roman.woff2') format('woff2'),
+              url('/path-to-your-fonts/GaramondPremierPro-Roman.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+          }
+
+          .skills-container {
+            padding: 5% 10%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+          }
+
+          .top-heading {
+            font-size: 2.5rem;
+            font-family: 'Garamond Premier Pro', serif;
+            color: #154c79;
+            margin-bottom: 5rem;
+            margin-top: 1rem;
+          }
+
+          .icons-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+          }
+
+          .icons-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+          }
+
+          .icons-row img {
+            transition: transform 0.3s ease;
+          }
+
+          .icons-row img:hover {
+            transform: scale(1.1);
+          }
+
+          .back-to-home {
+            font-size: 1rem;
+            text-align: center;
+            margin-top: 13rem;
+            margin-bottom: 1rem;
+          }
+
+          @media (max-width: 768px) {
             .skills-container {
-              padding: 5% 10%;
-              display: flex;
-              flex-direction: column;
-              text-align: center;
+              display: block;
+              padding-left: 5%;
+              padding-right: 5%;
             }
 
-            .skills-container h1 {
-              font-size: 2.5rem;
-              font-weight: bold;
-              margin-bottom: 3rem;
+            .icons-row {
+              flex-wrap: wrap;
+              gap: 10px;
             }
+          }
 
-            .skills-container .skills-grid {
-              display: grid;
-              grid-template-columns: repeat(3, 1fr);
-              grid-gap: 50px;
-              margin-top: 3rem;
+          @media (max-width: 567px) {
+            .skills-container {
+              font-size: 12px;
             }
-
-            .skills-container .skills-grid .skill {
-              align-items: center;
-              text-align: center;
-              margin-bottom: 3rem;
-            }
-
-            .icon {
-              margin-bottom: 1rem;
-            }
-
-            .title {
-              font-size: 1.5rem;
-              font-weight: bold;
-              font-family: 'Arial', sans-serif;
-              margin: 1rem 0;
-            }
-
-            .description {
-              font-size: 1.2rem;
-              font-weight: normal;
-              margin: 0;
-            }
-
-            .back-to-home {
-              font-size: 1rem;
-              text-align: center;
-              margin-top: 5rem;
-              margin-bottom: 2rem;
-            }
-
-            @media (max-width: 768px) {
-              .skills-container {
-                display: block;
-                padding-left: 5%;
-                padding-right: 5%;
-              }
-
-              .skills-container .skills-grid {
-                display: initial;
-              }
-
-              .skills-container .skills-grid .skill {
-                padding-bottom: 5%;
-              }
-            }
-
-            @media (max-width: 567px) {
-              .skills-container {
-                font-size: 12px;
-              }
-            }
-          `}
-        </style>
+          }
+        `}</style>
       </div>
     </MainLayout>
   );
