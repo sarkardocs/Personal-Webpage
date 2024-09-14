@@ -28,7 +28,11 @@ export default function FourZeroFour() {
       </div>
 
       {/* SectionContainer at the bottom */}
-      <SectionContainer />
+      <SectionContainer>
+        {/* Empty fragment, you can add content here if needed */}
+        <>
+        </>
+      </SectionContainer>
     </div>
   );
 }
