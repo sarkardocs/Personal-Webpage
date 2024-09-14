@@ -18,7 +18,9 @@ export default function FourZeroFour() {
           <Link href="/">Back to homepage </Link>
         </div>
       </main>
-      <SectionContainer />
+      <SectionContainer>
+        {/* You can put any footer content here if needed */}
+      </SectionContainer>
     </div>
   );
 }
