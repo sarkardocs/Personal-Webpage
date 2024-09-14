@@ -15,7 +15,7 @@ export default function FourZeroFour() {
           <p className="mb-8">
             Page under construction! But don't worry, you can find other content on our homepage.
           </p>
-          <Link href="/">Back to homepage </Link>
+          <Link href="/">Back to homepage</Link>
         </div>
       </main>
       <SectionContainer>
