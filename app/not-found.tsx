@@ -1,13 +1,6 @@
 import Link from '@/components/Link';
 import SectionContainer from '@/components/SectionContainer';
 
-// TODO: Comment out when https://github.com/vercel/next.js/issues/50566 is fixed.
-
-// export const metadata = {
-//   title: '404 - Subash Baniya',
-//   description: 'Not Found - Subash Baniya',
-// };
-
 export default function FourZeroFour() {
   return (
     <div className="flex flex-col justify-between min-h-screen">
@@ -26,11 +19,8 @@ export default function FourZeroFour() {
       
       {/* Move SectionContainer to the bottom */}
       <SectionContainer>
-        <div className="pt-6 pb-8">
-          {/* Your copyright or footer information here */}
-          <p className="text-center">
-            © 2024 • Subash
-          </p>
+        <div className="pt-6 pb-8 text-center">
+          © 2024 • Subash {/* Condensed into one line */}
         </div>
       </SectionContainer>
     </div>
