@@ -21,7 +21,12 @@ export default function FourZeroFour() {
         <p className="mb-8">
           Page under construction! But dont worry, you can find other content on our homepage.
         </p>
-        <Link href="/">Back to homepage </Link>
+        <Link
+  href="/"
+  className="inline-block px-4 py-2 text-white bg-purple-600 rounded-md hover:bg-purple-700"
+>
+  Back to homepage
+</Link>
       </div>
     </SectionContainer>
   );
